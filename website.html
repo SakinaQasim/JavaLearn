@@ -1,0 +1,50 @@
+<!-- basically tells teh versiion of html if we not put this it will use old html version -->
+<!DOCTYPE html>
+<!-- main webpage where all the things will add  -->
+<html>
+<!-- here all those code will be included which will not be diplay on the web page  -->
+
+<head>
+  <style>
+    .red-button {
+
+      /* this is css property   : this is css value         */
+      background-color: red;
+      color: white;
+      border: none;
+    }
+
+    .yellow-button {
+      background-color: orange;
+      color: black;
+      border: none;
+
+      /* the extra spaces you are saying is called indent and without it the code will look unrecognizable 
+             by default vscode uses 4 indent but of html css javacript 2 indent are required*/
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- wan to have tolip fro expample when we hover it will provide the value on the button  -->
+  <button title="hey" class="red-button" onclick="alert('Good job!')" >
+    hello
+  </button>
+
+  <p>
+    paragraph <button class="yellow-button"> hi </button> of text
+  </p>
+
+
+  <button  onclick="alert('loading...'); alert('Purchased');"   >buy now  </button>
+
+  <script>
+    //the code create a pop up
+    // alert('hello');
+
+    // console.log(2+2)
+  </script>
+</body>
+
+</html>
