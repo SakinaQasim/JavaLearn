@@ -60,6 +60,71 @@
 
 
 
+    //truthy and falsey value if statements just not only work for boolean values they alos work with number and strings
+    //they are basically use for shortcut in our code
+    //they also work with logical operators
+
+
+    //so zero is falsey statement it doesnot run it
+    if (0) {
+      console.log('truthy');
+    }
+    //there are total 6 values which are falsey declare in javascript
+    // 1)false
+    // 2)0
+    // 3)''
+
+    // 4)NaN
+    //if we do invalid maths we get NaN
+    console.log('Sakina'/ 5);
+
+
+    // 5)undefined
+    //That something doesn't have value
+    let vad1;
+    console.log(vad1);
+    //to use with const
+    const vad2 = undefined;
+    console.log(vad2)
+
+    // 6)null
+    //excluding all these the rest are truthy value
+
+    const cartQuantitty = 5;
+
+    //example for truthy and falsey
+    if (cartQuantitty){
+      console.log('cart has product');
+    }
+
+    //original way like we are using comaprison
+    if(cartQuantitty > 0){
+      console.log('cart has product');
+    }
+
+    //shortcut for if statements
+    // 1)ternary operator ?:
+
+    //condition  statement after : is else before is if
+    const result = true ? 'Truthy' : 'falsey';
+    console.log(result);
+
+    const res = 0 ? 'Truthy' : 'falsey';
+    console.log(res);
+
+    // 2)Guard operator &&
+    //it will check the left value if it false it will not go to right side and stop there
+    false && console.log('hello');
+  
+    // 3)default operator ||
+    //to set default value
+    
+    const currency = 'Paisa' || 'Dollar';
+    console.log(currency);
+
+    const curr = undefined || 'Dollar';
+    console.log(curr);
+
   </script>
 </body>
 
