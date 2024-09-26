@@ -29,11 +29,22 @@
     //another feature of function are parameters
     //put the value in the function
 
-    function calculateTax(){
-      console.log(1000 * 0.1);
+    //defualt value taxPer = 4000
+
+    function calculateTax(cost,taxPer){
+      console.log(taxPer);
+      console.log(cost * taxPer);
     }
 
-    calculateTax();
+    calculateTax(2000,0.1);
+    calculateTax(5000,0.2);
+
+    //Rules for Parameters
+    //1) can't use special words eg. function
+    //2) can't use number
+    //3) can't use special characters
+    //best practice is to use camel case (sakinaQasim)
+
 
   </script>
 </body>
