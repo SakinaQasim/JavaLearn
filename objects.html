@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objects</title>
+</head>
+<body>
+  
+
+  <script>
+    //object let us group multiple values at a time
+    //let us use multiple values together
+    //This is called multiple property value
+    //property :
+    //object makes our code more organized
+    //inside an object we can use any type of values
+   /*
+    const product = {
+      name : "sakina",
+      age : 21
+
+    };
+
+    console.log(product);
+    //dot notation
+    console.log(product.name);
+    console.log(product.age);
+
+    product.name = 'Amna';
+    console.log(product.name);
+    console.log(product);
+    product.color = 'Yellow';
+    console.log(product);
+    //can delete teh property
+    delete product.color;
+    console.log(product);
+    */
+
+    const product2 = {
+      name : 'Pen',
+      'delivery-day' : '1 day',
+      rating : {
+        stars : 4.5,
+        count: 87  //this is kind of an nested object object in an object
+      },
+      fun: function (){
+        console.log('function inside an object')//function inside an object is called a method object+function = method
+      }
+    };
+    console.log(product2);
+    console.log(product2.name);
+    //bracket notation help us to use those properties that not be used by dot notation 
+    //we can also use bracket notation for adding the new property and value just like dot notation jthe difference is that we can't use property like del-lang for dot notation
+    console.log(product2['name']);
+    console.log(product2['delivery-day']);//it will give an error because javascript will understand this like a math 
+
+    console.log(product2.rating);
+    console.log(product2.rating.stars);
+    product2.fun();
+
+  </script>
+</body>
+</html>
