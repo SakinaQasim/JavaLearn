@@ -58,7 +58,24 @@
     console.log(product2.rating);
     console.log(product2.rating.stars);
     product2.fun();
+    //we can say that console is builten object and log is a function both together make method 
 
+    //They are provided by the language
+    //2 more builten objects JSON (javascript object notation) LocalStorage
+    //JSON is basically a syntax , a similar syntax to javascript
+    //it has less syntax
+    //JSON doesnot support single quote and function AND it can understand by every programming language
+    //to send data to multiple computers we use JSON
+    //convert javascript object to JSON
+
+    //  METHOD
+    //conversion of product2 that was in object in javascript to json
+    console.log(JSON.stringify(product2));
+    //conversion of JSON to javascript
+    const jsonString = JSON.stringify(product2);
+    console.log(JSON.parse(jsonString));
+
+    //local storage save values more permanently
   </script>
 </body>
 </html>
