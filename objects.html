@@ -37,27 +37,27 @@
     console.log(product);
     */
 
-    const product2 = {
-      name : 'Pen',
-      'delivery-day' : '1 day',
-      rating : {
-        stars : 4.5,
-        count: 87  //this is kind of an nested object object in an object
-      },
-      fun: function (){
-        console.log('function inside an object')//function inside an object is called a method object+function = method
-      }
-    };
-    console.log(product2);
-    console.log(product2.name);
+    // const product2 = {
+    //   name : 'Pen',
+    //   'delivery-day' : '1 day',
+    //   rating : {
+    //     stars : 4.5,
+    //     count: 87  //this is kind of an nested object object in an object
+    //   },
+    //   fun: function (){
+    //     console.log('function inside an object')//function inside an object is called a method object+function = method
+    //   }
+    // };
+    // console.log(product2);
+    // console.log(product2.name);
     //bracket notation help us to use those properties that not be used by dot notation 
     //we can also use bracket notation for adding the new property and value just like dot notation jthe difference is that we can't use property like del-lang for dot notation
-    console.log(product2['name']);
-    console.log(product2['delivery-day']);//it will give an error because javascript will understand this like a math 
+    // console.log(product2['name']);
+    // console.log(product2['delivery-day']);//it will give an error because javascript will understand this like a math 
 
-    console.log(product2.rating);
-    console.log(product2.rating.stars);
-    product2.fun();
+    // console.log(product2.rating);
+    // console.log(product2.rating.stars);
+    // product2.fun();
     //we can say that console is builten object and log is a function both together make method 
 
     //They are provided by the language
@@ -70,13 +70,31 @@
 
     //  METHOD
     //conversion of product2 that was in object in javascript to json
-    console.log(JSON.stringify(product2));
+    // console.log(JSON.stringify(product2));
     //conversion of JSON to javascript
-    const jsonString = JSON.stringify(product2);
-    console.log(JSON.parse(jsonString));
+    // const jsonString = JSON.stringify(product2);
+    // console.log(JSON.parse(jsonString));
 
     //local storage save values more permanently
     //local storage only supports string
+
+    //null v undefined (in most cases null and unddefined work the same way)
+    //null ---> intentionally want something to be empty
+
+
+    //auto-boxing
+    //it also works with number and boolean except undefined or null
+    //it wrape a string in an object first then we apply properties or method
+    //strings can also have properties  
+    console.log('hello'.length);
+    console.log('hello' .toUpperCase()); //this a method
+
+    //we can't compare objects directly 
+    //reference compare the the object variable not the code inside
+    //actully we compare the reference instead of values inside it which is save in computer memory
+    //shortcut for objects destructing--> const {message,price} = object4;
+
+    //second is shortend property
   </script>
 </body>
 </html>
