@@ -93,8 +93,41 @@
     //reference compare the the object variable not the code inside
     //actully we compare the reference instead of values inside it which is save in computer memory
     //shortcut for objects destructing--> const {message,price} = object4;
+    //it is n easier way to take the properties out of an object
 
     //second is shortend property
+
+    const object4 = {
+      message1:'hello world', 
+      price: 890000
+    };
+    const  {message1 , price} = object4;
+    console.log(message1);
+    console.log(price);
+
+
+
+    const object5 = {
+      message: message1
+    }
+    console.log(object5);
+
+    const object6 = {
+
+      message1,
+
+      // method: function function1 (){
+      //   console.log('method')
+      // }
+
+      //shortend method
+      method (){
+        console.log('method')
+      }
+    }
+
+    console.log(object6);
+    console.log('method');
   </script>
 </body>
 </html>
